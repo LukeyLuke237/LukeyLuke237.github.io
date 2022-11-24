@@ -1,0 +1,33 @@
+div.youtube{
+    width: 50%;
+    margin: auto; 
+}
+
+div.attractions{
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: wheat;
+}
+
+img{
+    max-height: 150px;
+    float: right;
+}
+
+p{
+    line-height: 30px;
+}
+
+input{
+    margin: 20px;
+}
+
+div > a{
+    display: block;
+    margin: 10px;
+}
+
+div[id^=references_]{
+    display: none;
+}

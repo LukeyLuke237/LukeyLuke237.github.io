@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-color: teal;
+}
+
+body{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: aquamarine;
+    font-size: large;
+}
+
+header{
+    background-image: url('../images/vietnam-gfb30b8e4e_640.png');
+    background-repeat: repeat-x;
+    min-height: 100px;
+    background-size: 200px 100px;
+    color: goldenrod;
+    font-size: x-large;
+}
+
+header > h1{
+    padding-top: 20px;
+    text-align: center;
+} 
+
+p.center{
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+
+ul > li{
+    flex: 1 1 100px;
+    border: 1px solid black;
+    line-height: 2em;
+    text-align: center;
+}
+
+ul > li > a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+footer{
+    text-align: right;
+    margin: 10px;
+}

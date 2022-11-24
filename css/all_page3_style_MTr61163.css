@@ -1,0 +1,30 @@
+input#start{
+    display: block;
+    margin: auto;
+}
+
+div.centerDiv{
+    color: green;
+    font-size: xx-large;
+    width: 10%;
+    float: left;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form{
+    display: none;
+    background-color: wheat;
+    border: 1px solid black;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+input{
+    margin: 5px;
+}
+
+div.question{
+    margin: 5px;
+}

@@ -1,0 +1,45 @@
+form{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+form > fieldset{
+    flex: 1 1 500px;
+}
+
+div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div > label{
+    flex: 1 1 100px;
+    margin: 10px;
+}
+
+div > input{
+    flex: 2 1 100px;
+    margin: 5px;
+    max-width: 200px;
+}
+
+legend{
+    background-color: peru;
+    padding: 10px;
+    border-radius: 1em;
+    color:whitesmoke;
+}
+
+input[type="submit"]{
+    width: 100%;
+    margin: 20px;
+    font-weight: bold;
+    min-height: 40px;
+}
+
+fieldset{
+    background-color: wheat;
+}
+
+
+

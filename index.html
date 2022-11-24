@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="MinhChien">
+        <Title>A small guide to Vietnam Travel</Title>
+        <link href="css/style_MTr61163.css" rel="stylesheet">
+        <link href="css/all_page1_style_MTr61163.css" rel="stylesheet">
+        <script src="script/page1_validate_MTr61163.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Vietnam Travelling</h1>
+        </header>
+        <article>
+            <nav>
+                <ul>
+                    <li><a href="index.html" onclick="transition()">Welcome Page</a></li>
+                    <li><a href="page2_MTr61163.html">Guide</a></li>
+                    <li><a href="page3_MTr61163.html">Guide Quiz</a></li>
+                </ul>
+            </nav>
+            <p class="center">
+                This small website is where you can learn a little about Vietnam and some guide while travelling in this small but lovely country<br><br>
+                If you want some general guidance before looking at the guide, please fill in this form
+            </p>
+            <form method="get" action="./index.html" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>User Info</legend>
+                    <div>
+                        <label for="userName">Username</label>
+                        <input type="text" name="userName" id="userName" required>
+                    </div>
+                    <div>
+                        <label for="age">Your Age</label>
+                        <input type="number" name="age" id="age" min="1" max="100" step="1" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Travel Info</legend>
+                        <div>
+                            <label for="travellersNum">Number of people travelling</label>
+                            <input type="number" name="travellersNum" id="travellersNum" min="1" step="1" required>
+                        </div>
+                        <div>
+                            <label for="region">Travel region(s)</label>
+                            <span>
+                                <input type="checkbox" name="region" id="region1" value="northern">Northern
+                                <input type="checkbox" name="region" id="region2" value="central">Central
+                                <input type="checkbox" name="region" id="region3" value="southern">Southern 
+                            </span>
+                        </div>
+                </fieldset>
+                <input type="submit" value="Submit" onclick="return displayGuide(this.form)">
+            </form>
+            <p id="data_output" class="center"></p>
+        </article>
+        <footer>
+            <small><em>Copyright &copy; by Minh Chien</em></small>
+        </footer>
+    </body>
+</html>

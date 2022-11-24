@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="MinhChien">
+        <Title>Guide travelling Quiz</Title>
+        <link href="css/style_MTr61163.css" rel="stylesheet">
+        <link href="css/all_page3_style_MTr61163.css" rel="stylesheet">
+        <script src="script/page3_question_mark_animation_MTr61163.js"></script>
+        <script src="script/page3_check_answer_MTr61163.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Guide Quiz</h1>
+        </header>
+        <article>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Welcome Page</a></li>
+                    <li><a href="page2_MTr61163.html">Guide</a></li>
+                    <li><a href="page3_MTr61163.html">Guide Quiz</a></li>
+                </ul>
+            </nav>
+            <section id="animation"></section>
+            <p class="center">A small quiz to see if you can remember information in the Guide</p>
+            <input type="button" name="start" id="start" value="Start Quiz" onclick="startQuiz()">
+            <form id="quiz" method="get" action="./page3_MTr61163.html" enctype="application/x-www-form-urlencoded">
+                <div class="question">
+                    <p>Ha Long Bay, one of the UNESCO World Heritage Site, is located in which province of Vietnam?</p>
+                    <span>
+                        <input type="radio" name="question1" value="HaNoi">Ha Noi<br>
+                        <input type="radio" name="question1" value="QuangNinh">Quang Ninh<br>
+                        <input type="radio" name="question1" value="HaGiang">Ha Giang<br>
+                        <input type="radio" name="question1" value="QuangNam">Quang Nam<br>
+                    </span>
+                </div>
+                <div class="question">
+                    <p>What is the topping used in Pho - the national dish of Vietnam?</p>
+                    <span>
+                        <input type="radio" name="question2" value="BeefSlices">Beef Slices<br>
+                        <input type="radio" name="question2" value="Cheese">Cheese<br>
+                        <input type="radio" name="question2" value="Ketchup">Ketchup<br>
+                        <input type="radio" name="question2" value="Customizable">Customizable<br>
+                    </span>
+                </div>
+                <div class="question">
+                    <p>When was the Imperial Citadel of Hue recognized as a UNESCO World Heritage Site?</p>
+                    <span>
+                        <input type="radio" name="question3" value="1991">1991<br>
+                        <input type="radio" name="question3" value="1992">1992<br>
+                        <input type="radio" name="question3" value="1993">1993<br>
+                        <input type="radio" name="question3" value="1994">1994<br>
+                    </span>
+                </div>
+                <div class="question">
+                    <p>The largest limestone cave in Ha Long Bay is ...</p>
+                    <span>
+                        <input type="radio" name="question4" value="SungSot">Sung Sot cave<br>
+                        <input type="radio" name="question4" value="ThienCung">Thien Cung cave<br>
+                        <input type="radio" name="question4" value="BoHon">Bo Hon cave<br>
+                        <input type="radio" name="question4" value="DauGo">Dau Go cave<br>
+                    </span>
+                </div>
+                <div class="question">
+                    <p>Who is the first President of the Democratic Republic of Vietnam?</p>
+                    <span>
+                        <input type="radio" name="question5" value="VoNguyenGiap">Vo Nguyen Giap<br>
+                        <input type="radio" name="question5" value="NgoDinhDiem">Ngo Dinh Diem<br>
+                        <input type="radio" name="question5" value="GiaLong">Gia Long<br>
+                        <input type="radio" name="question5" value="HoChiMinh">Ho Chi Minh<br>
+                    </span>
+                </div>
+                <div class="question">
+                    <p>The river flowing beside the Hue Citadel, considered one of the most poetic river in Vietnam is ...</p>
+                    <span>
+                        <input type="radio" name="question6" value="Perfume">Perfume River<br>
+                        <input type="radio" name="question6" value="Mekong">Mekong River<br>
+                        <input type="radio" name="question6" value="Red">Red River<br>
+                        <input type="radio" name="question6" value="BachMa">Bach Ma River<br>
+                    </span>
+                </div>
+                <div class="question">
+                    <p>One of the most popular museums in Ho Chi Minh City, Vietnam is ...</p>
+                    <span>
+                        <input type="radio" name="question7" value="VietnamMilitaryHistory">Vietnam Military History Museum<br>
+                        <input type="radio" name="question7" value="WarRemnants">War Remnants Museum<br>
+                        <input type="radio" name="question7" value="ChamSculpture">Museum of Cham Sculpture<br>
+                        <input type="radio" name="question7" value="SaHuynhCulture">Museum of Sa Huynh Culture<br>
+                    </span>
+                </div>
+                <p id="result"></p>
+                <input type="submit" value="Submit Answer" onclick="return checkAnswer(this.form)">
+            </form>
+        </article>
+        <footer>
+            <small><em>Copyright &copy; by Minh Chien</em></small>
+        </footer>
+    </body>
+</html>
